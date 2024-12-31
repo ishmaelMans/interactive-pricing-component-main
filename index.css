@@ -158,7 +158,8 @@ body{
     height: 25px;
     border-radius: 20px;
     background-color: rgb(201, 201, 201);
-    margin: 0 15px;
+    margin: 0 10px;
+    transform: scale(.75);
 }
 .section4 .monthly .btn .circle{
     width: 15px;
@@ -196,10 +197,13 @@ body{
 .section5 ul{
     list-style-type: none;
 }
-.section5 ul li{
+
+.section5 ul li {
     line-height: 1.6;
     font-size: 12px;
+    color: hsl(225, 20%, 60%);
 }
+
 .section5 ul img{
     padding-right: 15px;
     padding-left: 0;
@@ -302,6 +306,17 @@ body{
         grid-area: section4;
         justify-content: center;
         margin-bottom: 40px;
+    }
+
+    .section5 ul li {
+        line-height: 1.6;
+        font-size: 15px;
+        color: hsl(225, 20%, 60%);
+    }
+
+    .section5 ul img {
+        padding-right: 15px;
+        padding-left: 0;
     }
         
     .section5 {
