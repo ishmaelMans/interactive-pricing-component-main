@@ -40,8 +40,8 @@ body{
     text-align: center;
     background-image: url("./images/pattern-circles.svg");
     background-repeat: no-repeat;
+    background-size: 120px 120px;
     background-position: center;
-    background-size: auto;
 }
 
 .price-title p{
@@ -59,8 +59,8 @@ body{
 .price-container{
     user-select: none;
     -webkit-user-select: none;
-    width: 380px;
-    height: 300px;
+    width: 450px;
+    height: 350px;
     display: grid;
     padding: 10px 35px;
     grid-template-areas: 
