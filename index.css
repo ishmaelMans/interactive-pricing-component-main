@@ -21,6 +21,7 @@ body{
     padding: 30px;
     justify-content: center;
     background-image: url("./images/bg-pattern.svg");
+    background-size: 100px 50px cover;
     background-position: top;
     background-repeat: no-repeat;
 }
