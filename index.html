@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="index.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="price-title">
+          <h2>Simple, traffic-based pricing</h2>
+          <p>sign-up for our 30-dat trial. No credit card required.</p>
+        </div>
+        <div class="price-container">
+          <div class="section1 flex">
+            <p>100k PAGEVIEWS</p>
+          </div>
+          <div class="section2 flex">
+            <h1>$16.00</h1>
+            <span>/month</span>
+          </div>
+          <div class="section3 flex">
+            <!-- <label for="file">File progress:</label> -->
+            <progress
+              class="progress-bar"
+              id="progress-bar"
+              value="20"
+              max="100"
+            ></progress>
+            <div class="slider">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="13">
+                <g fill="#80FFF3" fill-rule="evenodd">
+                  <path
+                    d="M16 2.558v7.884a1 1 0 001.735.679l3.639-3.943a1 1 0 000-1.356l-3.64-3.943A1 1 0 0016 2.558zM6 2.558v7.884a1 1 0 01-1.735.679L.626 7.178a1 1 0 010-1.356l3.64-3.943A1 1 0 016 2.558z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="section4 flex">
+            <div class="monthly">
+              <p>Monthly Billing</p>
+              <div class="btn">
+                <div class="circle"></div>
+              </div>
+            </div>
+            <div class="yearly">
+              <p>Yearly Billing</p>
+              <span>25% discount</span>
+            </div>
+          </div>
+          <div class="section5 flex">
+            <ul>
+              <li>
+                <img src="./images/icon-check.svg" alt="icon-check" />Unlimited
+                websites
+              </li>
+              <li>
+                <img src="./images/icon-check.svg" alt="icon-check" />100% data
+                ownership
+              </li>
+              <li>
+                <img src="./images/icon-check.svg" alt="icon-check" />Email
+                reports
+              </li>
+            </ul>
+          </div>
+          <div class="section6 flex">
+            <input type="button" value="Start my trial" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

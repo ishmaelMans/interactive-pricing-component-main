@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Manrope";
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./images/bg-pattern.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.price-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 150px;
+    /* background-color: #fff; */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-image: url("./images/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+.price-title p{
+    font-size: 13px;
+    margin-top: 7px;
+    color: hsl(225, 20%, 60%);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-container{
+    user-select: none;
+    -webkit-user-select: none;
+    width: 380px;
+    height: 300px;
+    display: grid;
+    padding: 10px 35px;
+    grid-template-areas: 
+        "section1 section2"
+        "section3 section3"
+        "section4 section4"
+        "section5 section6";
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+}
+.progress-bar {
+    width: 100%;
+    height: 15%;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color:hsl(174, 77%, 80%);
+    /* border-radius: 15px 0 0 15px; */
+    border-radius: 5px;
+}
+
+.progress-bar::-moz-progress-bar {
+    background-color:hsl(174, 77%, 80%);
+    /* border-radius: 15px 0 0 15px; */
+    border-radius: 5px;
+}
+
+.section1{
+    grid-area: section1;
+    justify-content: left;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: hsl(225, 20%, 60%);
+}
+.section2{
+    grid-area: section2;
+    justify-content: right;
+}
+
+.section2 h1 {
+    letter-spacing: -1px;
+    color: hsl(227, 35%, 25%);
+    font-weight: 900;
+    padding-right: 5px;
+}
+
+.section2 span{
+    font-size: 12px;
+    letter-spacing: 1px;
+    /* transform: translateY(-5px); */
+}
+.section3{
+    grid-area: section3;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.section3 .slider{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: hsl(174, 86%, 45%);
+    box-shadow: 0 8px 15px hsl(174, 77%, 80%);
+    cursor: pointer;
+}
+
+.section4{
+    grid-area: section4;
+    font-size: 10px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.section4 .monthly{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section4 .monthly .btn{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: rgb(201, 201, 201);
+    margin: 0 15px;
+}
+.section4 .monthly .btn .circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: rgb(255, 255, 255);
+}
+.section4 .monthly .btn .circle:hover{
+    cursor: pointer
+}
+
+.section4 .monthly input{
+    border: none;
+}
+.section4 .yearly{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section4 .yearly span{
+    font-size: 10px;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-size: 9px;
+    margin-left: 5px;
+    background-color: hsl(14, 92%, 95%);
+    color: hsl(15, 100%, 70%);
+}
+.section5{
+    grid-area: section5;
+    justify-content: left;
+}
+
+.section5 ul{
+    list-style-type: none;
+}
+.section5 ul li{
+    line-height: 1.6;
+    font-size: 12px;
+}
+.section5 ul img{
+    padding-right: 15px;
+    padding-left: 0;
+}
+.section6{
+    grid-area: section6;
+    justify-content: right;
+}
+.section6 input{
+    background-color:hsl(227, 35%, 25%);
+    border: none;
+    color: #fff;
+    padding: 9px 27px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+.section6 input:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 490px) {
+    .price-title p {
+        width: 220px;
+        font-size: 16px;
+        margin-top: 7px;
+        margin-bottom: 40px;
+        line-height: 1.5;
+        color: hsl(225, 20%, 60%);
+    }
+
+
+    .price-container {
+        width: 380px;
+        min-height: 500px;
+        display: grid;
+        padding: 20px;
+        grid-template-areas:
+            "section1"
+            "section3"
+            "section2"
+            "section4"
+            "section5"
+            "section6";
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 30%;
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: pointer;
+    }
+
+    .section1 {
+        grid-area: section1;
+        justify-content: center;
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+        
+    .section3 {
+        grid-area: section3;
+        justify-content: center;
+        height: 30px;
+        margin-bottom: 35px;
+    }
+
+    .section3 .slider {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: hsl(174, 86%, 45%);
+        box-shadow: 0 8px 15px hsl(174, 77%, 80%);
+        cursor: pointer;
+    }
+
+    .section2 {
+        grid-area: section2;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+
+    .section2 h1 {
+        letter-spacing: -1px;
+        color: hsl(227, 35%, 25%);
+        font-weight: 900;
+        font-size: 40px;
+        padding-right: 5px;
+    }
+        
+        
+    .section4 {
+        grid-area: section4;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+        
+    .section5 {
+        grid-area: section5;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+        
+    .section6 {
+        grid-area: section6;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .section6 input {
+        background-color: hsl(227, 35%, 25%);
+        border: none;
+        color: #fff;
+        padding: 15px 60px;
+        border-radius: 30px;
+        font-size: 14px;
+    }
+}
